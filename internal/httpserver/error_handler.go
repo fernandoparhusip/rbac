@@ -15,7 +15,7 @@ func CustomErrorHandler() gin.HandlerFunc {
 
 			c.JSON(http.StatusBadRequest, gin.H{
 				"error":   "Terjadi Kesalahan pada request",
-				"mesasge": err.Error(),
+				"message": err.Error(),
 			})
 		}
 	}
